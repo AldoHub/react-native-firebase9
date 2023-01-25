@@ -24,10 +24,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.aldocaava.test"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "51d89ce0-9635-41db-b5c4-d1e7367b0110"
+      }
+    },
+    "owner": "aldocaava"
   }
 }
