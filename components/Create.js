@@ -82,8 +82,9 @@ const Create = () => {
             <TextInput style={styles.inputGroup} placeholder="content" onChange={(e) => setContent(e.target.value)} /> 
             </View>
             
-            <View>
+            <View style={styles.button}>
             <Button
+           
                 title="Select a cover image"
                 onPress={selectFile}
                 />
@@ -107,13 +108,16 @@ const Create = () => {
 
 const styles = StyleSheet.create({
     inputsContainer: {
-        padding: "1rem",
+        padding: 10,
+    },
+    button: {
+        marginBottom: 30,
     },
     inputGroup: {
         border: "1px solid red",
-        padding: "1rem",
+        padding: 10,
         backgroundColor: "#eee",
-        marginBottom: "0.5rem",
+        marginBottom: 10,
     }
 })
 

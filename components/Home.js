@@ -29,7 +29,7 @@ const Home = ({navigation}) => {
             <View>
             {posts.map((post) => {
               return(
-                  <TouchableWithoutFeedback key={post.id} onPressIn={() => navigation.navigate("Single", {
+                  <TouchableWithoutFeedback key={post.id} onPress={() => navigation.navigate("Single", {
                     id: post.id
                   })}>
                     <View style={styles.customCard} >
@@ -57,29 +57,27 @@ const Home = ({navigation}) => {
 
 const styles = StyleSheet.create({
   cardsContainer: {
-    padding: "1rem",
+    padding: 10,
   },  
   customCard: {
     backgroundColor: "white",
-    marginBottom: "1rem",
+    marginBottom: 10,
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
-    width: "90%",
     marginLeft: "auto",
     marginRight: "auto",
     height: "auto",
-    borderRadius: "10px",
+    borderRadius: 10,
     overflow: "hidden",
   },
   cardImage: {
-    borderRadius: "10px 10px 0px 0px",
-    width: "100%",
-    height: "400px"
+    width: 350,
+    height: 400
   },
   cardText: {
-    marginTop: "0.5rem",
-    marginBottom: "0.5rem"
+    marginTop: 10,
+    marginBottom: 10
   }
 })
 

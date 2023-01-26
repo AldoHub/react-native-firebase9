@@ -129,9 +129,10 @@ const Single = ({route, navigation}) => {
 
 
                 </Modal>
-                
-                
-                <ImageBackground source={post.cover} resizeMode="cover" style={styles.image}></ImageBackground>
+               
+                <Image 
+                        source={{uri: post.cover}}
+                        style={styles.image} />
                 <View style={styles.postContainer}>
                     <Text style={styles.postTitle}>{post.title}</Text>
                     <Text>{post.content}</Text>
@@ -151,24 +152,25 @@ const Single = ({route, navigation}) => {
 
 const styles = StyleSheet.create({
     image: {
-        justifyContent: 'center',
-        height: "600px",
+       flex: 1,
+        width: 400,
+        height: 600,
        
     },
     postContainer: {
-        padding: "2em"
+        padding: 10
     },
     postTitle: {
-        fontSize: "2rem",
+        fontSize: 18,
         textAlign: "center",
         color: "#666",
-        marginBottom: "2rem"
+        marginBottom: 20
     },
     inputGroup: {
         border: "1px solid red",
-        padding: "1rem",
+        padding: 10,
         backgroundColor: "#eee",
-        marginBottom: "0.5rem",
+        marginBottom: 10,
     },
     inputGroupHidden: {
         display: "none",
